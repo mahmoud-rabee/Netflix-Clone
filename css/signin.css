@@ -1,0 +1,211 @@
+body {
+    background-image: url(../assets/images/background.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+@media (max-width: 740px) {
+    body {
+        background-image: none;
+        background-color: #000000;
+    }
+}
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    padding: 15px 0 15px 35px;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 440px) {
+    .logo  {
+        padding: 15px 0 15px 20px;
+    }
+}
+.logo img {
+    width: 180px;
+}
+@media (max-width: 440px) {
+    .logo img {
+        width: 109px;
+    }
+}
+/* Start Sign In Form */
+.form {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 50px 60px 120px;
+    width: 33%;
+    border-radius: 5px;
+    margin: 0 auto 90px;
+}
+@media (max-width: 1115px) {
+    .form {
+        width: 50%;
+    }
+}
+@media (max-width: 740px) {
+    .form {
+        width: 100%;
+        padding: 20px 37px 0;
+    }
+}
+@media (max-width: 440px) {
+    .form  {
+        padding: 35px 20px;
+        margin: 0 auto 50px;
+    }
+}
+.form h2 {
+    color: #fff;
+    font-size: 35px;
+    margin: 10px 0 30px;
+}
+.form form {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.form form input {
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+form input:nth-child(1)::placeholder,
+form input:nth-child(2)::placeholder {
+    transition: .3s;
+}
+form input:nth-child(1):focus::placeholder,
+form input:nth-child(2):focus::placeholder {
+    transform: translateY(-15px);
+    font-size: 12px;
+}
+.form form input.submit {
+    background-color: red;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 25px 0 13px 0;
+}
+form div {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 440px) {
+    form div {
+        margin-bottom: 20px;
+    }
+}
+form div div label {
+    color: #b3b3b3;
+    font-size: 13px;
+}
+form div a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 13px;
+}
+.form > div {
+    margin-bottom: 15px;
+    color: white;
+    text-decoration: none;
+}
+.form > div span {
+    color: #737373;
+}
+.form > div a {
+    color: white;
+    text-decoration: none;
+}
+form div a:hover,
+.form > div a:hover {
+    text-decoration: underline;
+}
+.form p {
+    color: #737373;
+    font-size: 13px;
+    width: 90%;
+}
+.form p a {
+    color: #0071eb;
+    text-decoration: none;
+}
+.form p a:hover {
+    text-decoration: underline;
+}
+/* End Sign In Form */
+/* Start Footer */
+footer {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 35px 40px;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 740px) {
+    footer  {
+        border-top: 1px solid #b3b3b3;
+    }
+}
+@media (max-width: 440px) {
+    footer  {
+        padding: 35px 20px;
+    }
+}
+footer .container {
+    width: 75%;
+    margin: auto;
+}
+@media (max-width: 740px) {
+    footer .container  {
+        width: 100%;
+    }
+}
+footer .container a:first-child {
+    margin-bottom: 27px;
+    display: block;
+    color: #737373;
+}
+footer .container .links-group {
+    display: flex;
+    justify-content: space-between;
+}
+footer .container .links-group div a {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #737373;
+}
+footer .container a {
+    text-decoration: none;
+}
+footer .container a:hover {
+    text-decoration: underline;
+}
+footer select {
+    background-color: #000000;
+    color: #737373;
+    padding: 13px 25px;
+    margin: 20px 0px;
+    border-radius: 3px;
+    font-size: 13px;
+    border: 1px solid #fff;
+}
+footer select option {
+    background-color: #000000;
+}
+/* End Footer */
